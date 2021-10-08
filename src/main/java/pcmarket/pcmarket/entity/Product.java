@@ -18,8 +18,10 @@ public class Product {
     private String name;
     private double price;
     private int amount;
+    
     @ManyToOne
     private Category category;
+
     @OneToMany
     private List<TypeCharacterics> typeCharacterics;
 }
